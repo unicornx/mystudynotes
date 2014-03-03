@@ -38,3 +38,7 @@ call指令的offset是0x06，所以call指令的地址是0x80483ba
 0x80483c7  
 0x80483c8 <- swap function address  
 
+另参考 http://stackoverflow.com/questions/12412064/meaning-of-r-386-32-r-386-pc32-in-rel-text-section-of-elf  
+R_386_32 is useful for static data, as shown here, since the compiler just loads the relocated symbol address into some register and then treats it as a pointer. R_386_PC32 is useful for function references since it can be used as an immediate argument to call.   
+
+
