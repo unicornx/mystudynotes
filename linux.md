@@ -1,3 +1,12 @@
+arm中映像文件，输入段，输出端，域的介绍  
+http://www.eamonning.com/blog/view/267
+
+
+
+
+
+
+
 elf
 man elf
 The ELF Object File Format by Dissection http://www.linuxjournal.com/article/1060  
