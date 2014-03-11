@@ -1,7 +1,9 @@
 arm中映像文件，输入段，输出端，域的介绍  
 http://www.eamonning.com/blog/view/267
 
-
+s3c2440系统时钟  
+http://blog.csdn.net/dreamcatcher100/article/details/9374559  
+我们用最清晰的线路来绘制一下时钟的产生过程：外部时钟源→通过寄存器MPLLCON得到FCLK→再通过寄存器CLKDIVN得到HCLK和PCLK。这个配置过程在启动文件中就已完成。
 
 
 
