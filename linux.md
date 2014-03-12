@@ -1,3 +1,8 @@
+下载地址  
+http://www.linuxidc.com/Linux/2011-09/43099.htm
+
+
+
 arm中映像文件，输入段，输出端，域的介绍  
 http://www.eamonning.com/blog/view/267
 
