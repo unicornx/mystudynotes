@@ -1,5 +1,11 @@
+一些ARM的好书：
 下载地址  
-http://www.linuxidc.com/Linux/2011-09/43099.htm
+ARM体系结构与编程/杜春雷http://www.linuxidc.com/Linux/2011-09/43099.htm  
+
+ARM嵌入式系统基础教程(第2版)/周立功 读前面几章就足够了，可以很快熟悉基本指令和CPU模式之类的，其实平常也就那几个指令。
+ARM System Developer's Guide: Designing and Optimizing System Software/Andrew Sloss-图书 个人觉得这本书远比杜春雷的这本ARM体系结构与编程/杜春雷 好
+http://www.cnblogs.com/mercuryxu/archive/2009/12/25/1631770.html  
+http://www.amobbs.com/thread-3273419-1-1.html  
 
 
 
