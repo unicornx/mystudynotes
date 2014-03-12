@@ -1,6 +1,25 @@
 arm中映像文件，输入段，输出端，域的介绍  
 http://www.eamonning.com/blog/view/267
 
+
+ADS1.2的OPTION中的IMAGE ENTRY POINT是就是程序运行的时候，应该执行的第一条指令的地址。  
+
+
+ARM中的RO、RW和ZI DATA说明[http://blog.csdn.net/jamestaosh/article/details/4348385]  
+该文章中的例子比较好
+
+运行时域和加载时域（运行地址和加载地址）[http://blog.csdn.net/yam_killer/article/details/7909308]  
+lds 文件
+
+scatter 文件  
+试图搞懂MDK程序下载到flash(二)--分散加载文件scatter[http://blog.csdn.net/mybelief321/article/details/8941238]  
+这个blog有不少不错的嵌入式学习总结，值得看看
+
+
+S3C2440释疑[http://blog.163.com/dingmz_frcmyblog/blog/static/2173040232013111425920546/]  
+提了几个不错的问题，但回答不是很对。可以用来搜集为常用问题对待  
+
+
 s3c2440系统时钟  
 http://blog.csdn.net/dreamcatcher100/article/details/9374559  
 我们用最清晰的线路来绘制一下时钟的产生过程：外部时钟源→通过寄存器MPLLCON得到FCLK→再通过寄存器CLKDIVN得到HCLK和PCLK。这个配置过程在启动文件中就已完成。
