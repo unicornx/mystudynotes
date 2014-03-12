@@ -1,4 +1,4 @@
-一些ARM的好书：
+一些ARM的好书：http://hi.baidu.com/shi51314/item/48bda339fc04f2f2e7bb7abb  
 下载地址  
 ARM体系结构与编程/杜春雷http://www.linuxidc.com/Linux/2011-09/43099.htm  
 
