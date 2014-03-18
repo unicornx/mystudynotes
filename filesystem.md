@@ -39,15 +39,17 @@ fs_struct
 mnt_namespace
 
 
-process <1--*> vfsmount: a process contains a list of vfs mounted  
-vfsmount <1--1> super_block: a vfs has one super_block  
-super_block <1--*> inode: a super_block manage a list of inodes  
+process 1--* vfsmount: a process contains a list of vfs mounted  
+vfsmount 1--1 super_block: a vfs has one super_block  
+super_block 1--* inode: a super_block manage a list of inodes  
 
-process <1--1> fs_struct:  
-        <1--*> files_struct: a process maintain a list of opend file descripter  
+process 1--1 fs_struct:  
+        1--* files_struct:  
+files_struct 1--* file: a process maintain a list of opend file descripter  
+
 ![process-fs-files](http://p.blog.csdn.net/images/p_blog_csdn_net/fudan_abc/fs.jpg)  
 
-files_struct <1--1> dentry <*--1> inode: files_struct.f_path  
+file 1--1 dentry *--1 inode 
 
 
 
