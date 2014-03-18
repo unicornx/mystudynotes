@@ -59,7 +59,7 @@ open("/filename2", rw)
 
 then this process should contains two "file" instances, file1 & file2  
 file1.f_path contains two dentry entities: "/" & "filename1"  
-file1.f_path contains two dentry entities: "/" & "filename2"
+file1.f_path contains two dentry entities: "/" & "filename2"  
 "filename1" & "filename2" both point to the FILE inode  
 
 [Linux 文件系统剖析](http://www.ibm.com/developerworks/cn/linux/l-linux-filesystem/)   可以结合代码看看，但没有涉及太多inode和file，进程之间的关系，更多关注了文件系统，挂载和超级块的关系，可以参考。  
