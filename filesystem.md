@@ -1,4 +1,3 @@
-
 [super_block](http://lxr.free-electrons.com/source/include/linux/fs.h?v=2.6.34#L1319)  
 
 [super_operations](http://lxr.free-electrons.com/source/include/linux/fs.h?v=2.6.34#L1558)  
@@ -38,6 +37,18 @@ files_struct
 fs_struct
 
 mnt_namespace
+
+
+process <1--*> vfsmount: a process contains a list of vfs mounted  
+vfsmount <1--1> super_block: a vfs has one super_block  
+super_block <1--*> inode: a super_block manage a list of inodes  
+
+process <1--1> fs_struct:  
+        <1--*> files_struct: a process maintain a list of opend file descripter  
+![process-fs-files](http://p.blog.csdn.net/images/p_blog_csdn_net/fudan_abc/fs.jpg)  
+
+files_struct <1--1> dentry <*--1> inode: files_struct.f_path  
+
 
 
 [Linux 文件系统剖析](http://www.ibm.com/developerworks/cn/linux/l-linux-filesystem/)   可以结合代码看看，但没有涉及太多inode和file，进程之间的关系，更多关注了文件系统，挂载和超级块的关系，可以参考。  
