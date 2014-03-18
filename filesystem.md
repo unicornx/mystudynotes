@@ -49,9 +49,18 @@ files_struct 1--* file: a process maintain a list of opend file descripter
 
 ![process-fs-files](http://p.blog.csdn.net/images/p_blog_csdn_net/fudan_abc/fs.jpg)  
 
-file 1--1 dentry *--1 inode 
+file 1--* dentry 1--1 inode  
+file.f_path: a list of dentry which represent a while path such as /a/b/c, a, b and c are 3 dentry constructing a whole path  
+every dentry entity points to a actual inode entiry  
+![inode & dentry](http://hi.csdn.net/attachment/201012/6/0_1291637767J6uo.gif)
+for exampple, if one FILE has two hard links(alias, e.g. "/filename1", "/filename2"), there should be one inode represent this FILE rawdata. When a process open this FILE by the two aliases like below:  
+open("/filename1", rw)  
+open("/filename2", rw)  
 
-
+then this process should contains two "file" instances, file1 & file2  
+file1.f_path contains two dentry entities: "/" & "filename1"  
+file1.f_path contains two dentry entities: "/" & "filename2"
+"filename1" & "filename2" both point to the FILE inode  
 
 [Linux 文件系统剖析](http://www.ibm.com/developerworks/cn/linux/l-linux-filesystem/)   可以结合代码看看，但没有涉及太多inode和file，进程之间的关系，更多关注了文件系统，挂载和超级块的关系，可以参考。  
 
