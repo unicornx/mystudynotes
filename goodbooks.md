@@ -4,8 +4,11 @@ http://www.amazon.com/dp/1449339530/ref=as_li_ss_til?tag=roblov-20&camp=0&creati
 
 Linux System Programming - Robert Love (Author)  
 [下载link1](http://pdf.th7.cn/down/files/1312/linux_system_programming_2nd_edition.pdf)  
+[下载link2](http://bbs.chinaunix.net/thread-2295590-1-1.html)  
+
 
 Linux Kernel Networking - Rami Rosen (Author)  
+
 
 The Linux Programming Interface - Michael Kerrisk (Author)  
 [下载link1](http://en.bookfi.org/g/linux+and+unix)  
