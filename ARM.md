@@ -9,3 +9,17 @@ ARM处理器架构
  - 流水线
  
  
+AXD  
+[AXD 调试问题](http://wenku.baidu.com/view/b9636063caaedd3383c4d3e2.html)  
+首先要明确一点的是ADS(AXD) 在线debug时要将编译好的运行时代码download到ARM的相应地址上去,这里这个download的地址，就是arm上存储部件的地址，必须是RAM型的存储特性才可以被AXD进行download，如果这个地址域被映射成是Flash存储器，AXD是download不了的，虽然AXD不报错，但可以  通过在AXD下用dissambly 查看一下，如果是flash则看不到正确的指令。  
+AXD调试没有什么特别的，他的工作原理是将编译好的运行时映像download到ARM相应地址中去，然后捕获arm 的PC 强制其到 ADS中的entry point 所设置的映像入口地址上，然后你一点击run，pc就从这个入口地址取指，后面该咋执行就咋执行去了。实际代码的硬件运行环境就是ARM芯片的运行环境。 
+
+[ads1.2实例](http://wenku.baidu.com/view/602ace7da26925c52cc5bf90.html)  
+图文并茂，可以参考一下。  
+
+[ads1.2使用手册](http://wenku.baidu.com/view/27a2a2886529647d272852ae.html)  
+
+
+[ARM应用系统开发详解──基于S3C4510B的系统设计](http://wenku.baidu.com/view/d3eaa04769eae009581bece2.html)  
+
+
