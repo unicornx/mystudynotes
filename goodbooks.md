@@ -26,3 +26,9 @@ ARM嵌入式系统基础教程(第2版)/周立功 读前面几章就足够了，
 ARM System Developer's Guide: Designing and Optimizing System Software/Andrew Sloss-图书 个人觉得这本书远比杜春雷的这本ARM体系结构与编程/杜春雷 好
 http://www.cnblogs.com/mercuryxu/archive/2009/12/25/1631770.html  
 http://www.amobbs.com/thread-3273419-1-1.html  
+
+
+Good books about Python
+----
+[那些年，我们读过的python！](http://blog.csdn.net/zuoninger/article/details/21597495)  
+
