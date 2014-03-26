@@ -54,6 +54,18 @@ AXD调试没有什么特别的，他的工作原理是将编译好的运行时�
 
 ADS1.2的OPTION中的IMAGE ENTRY POINT是就是程序运行的时候，应该执行的第一条指令的地址。  
 
+
+Bootloader
+----
+[ARM的位置无关程序设计在Bootloader中的应用](http://www.mcuol.com/tech/107/26052.htm)  
+
+
+ARM & C
+----
+[最简单的C程序(STM32版的helloworld)](http://wiki.csie.ncku.edu.tw/embedded/Lab19/stm32-prog.pdf)  
+
+
+
 S3C2440  
 ----
 
