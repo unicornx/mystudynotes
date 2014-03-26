@@ -1,8 +1,10 @@
 
 
 
-
 [合理的嵌入式开发学习路线](http://blog.csdn.net/simanstar/article/details/8806652)  
+
+[华清远见嵌入式培训课程](http://www.embedu.org/courses/default.htm)  
+
 
 
 elf
