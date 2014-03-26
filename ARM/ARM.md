@@ -62,8 +62,15 @@ Bootloader
 
 ARM & C
 ----
-[最简单的C程序(STM32版的helloworld)](http://wiki.csie.ncku.edu.tw/embedded/Lab19/stm32-prog.pdf)  
+在ADS环境下直接使用C语言编程
+参考["ADS及RVDS中ARM C库 __main函数执行流程图（截至ARM官方手册）"](http://blog.csdn.net/jg_ben/article/details/6648048)  
+可以回答“嵌入式系统原理与应用”P57，程序载入AXD环境后虽然ROBase被设置为0x0，但程序入口点的地址不是0x0的问题。可以看到0x0是__main,以及在low-level-symbols中看到的很多符号地址的大致含义等。
+但带来一个问题**[Q]有关程序入口点的含义(Image entry point)**
 
+参考：  
+[使用ARM标准C库进行嵌入式应用程序开发](http://wenku.baidu.com/view/bb96fdc4aa00b52acfc7ca58.html)  
+[最简单的C程序(STM32版的helloworld)](http://wiki.csie.ncku.edu.tw/embedded/Lab19/stm32-prog.pdf)  
+[ARM嵌入式软件编程经验谈](http://www.embedu.org/Column/Column02.htm)  
 
 
 S3C2440  

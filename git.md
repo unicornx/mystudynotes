@@ -1,3 +1,9 @@
+如何解决在家访问github很慢的方法:  
+http://ruby-china.org/topics/17374  
+我用了加一下hosts文件的方法，C:\WINDOWS\system32\drivers\etc\hosts  
+  
+    185.31.17.184 github.global.ssl.fastly.net
+
 Gerrit commands: 
 
 -------- 
