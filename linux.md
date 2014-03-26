@@ -1,3 +1,10 @@
+
+
+
+
+[合理的嵌入式开发学习路线](http://blog.csdn.net/simanstar/article/details/8806652)  
+
+
 elf
 man elf
 The ELF Object File Format by Dissection http://www.linuxjournal.com/article/1060  
@@ -42,3 +49,6 @@ call指令的offset是0x06，所以call指令的地址是0x80483ba
 R_386_32 is useful for static data, as shown here, since the compiler just loads the relocated symbol address into some register and then treats it as a pointer. R_386_PC32 is useful for function references since it can be used as an immediate argument to call.   
 
 
+杂
+----
+http://blog.csdn.net/simanstar/article/category/1691849/1  
