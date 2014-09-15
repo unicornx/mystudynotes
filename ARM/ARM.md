@@ -19,10 +19,16 @@ ENTRY
 参考[ARM](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0489c/Chdibhie.html)  
 
 
-ARM中的RO、RW和ZI DATA说明[http://blog.csdn.net/jamestaosh/article/details/4348385]  
+[ARM中的RO、RW和ZI DATA说明](http://blog.csdn.net/jamestaosh/article/details/4348385)  
 该文章中的例子比较好
 
-运行时域和加载时域（运行地址和加载地址）[http://blog.csdn.net/yam_killer/article/details/7909308]  
+有关“运行时域”和“加载时域”的一些概念：  
+直接参考ARM链接器用户指南[3.1.2.映像的加载视图和执行视图](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0206ic/index.html)或者[英文版](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0206ic/Cacbdbbc.html)  
+[运行时域和加载时域](http://blog.csdn.net/yam_killer/article/details/7909308)    
+[arm加载域和运行域的理解](http://19831028.blog.51cto.com/1333653/675523)  
+有关“域”，有些书上叫“region”不过看ARM的说法似乎叫"view"。
+代码里定义的叫Input sections,可以随便定义，在汇编过程中Input sections会被组合成Output sections, 域只有两个，一个是load view，还有一个是execution view。load view描述image的内容从哪里被load，execution view描述的是image被load到SDRAM中的何处位置并以该位置为基准开始执行，所以linker计算的都是execution view中的地址。load view的地址只是描述image静态存储的排放位置问题。    
+
 lds 文件
 
 scatter 文件  
@@ -32,7 +38,7 @@ scatter 文件
 [ARM应用系统开发详解──基于S3C4510B的系统设计](http://wenku.baidu.com/view/d3eaa04769eae009581bece2.html)  
 这里有汇编，链接的命令参数的含义，可以对照着GUI看。  
 
-[arm加载域和运行域的理解](http://19831028.blog.51cto.com/1333653/675523)
+
 
 [RO,RW,ZI 和scatter file详解](http://19831028.blog.51cto.com/1333653/540221)
 
