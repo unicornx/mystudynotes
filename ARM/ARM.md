@@ -13,6 +13,12 @@ ARM处理器架构
 ARM的编译链接相关问题  
 ----
 
+首先要了解image结构的概念，最好的方法就是参考[ARM 链接器用户指南](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0206ic/index.html)  
+
+ENTRY  
+参考[ARM](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0489c/Chdibhie.html)  
+
+
 ARM中的RO、RW和ZI DATA说明[http://blog.csdn.net/jamestaosh/article/details/4348385]  
 该文章中的例子比较好
 
