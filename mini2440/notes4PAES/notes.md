@@ -319,3 +319,51 @@ S3C2440可以最多接受来自60个中断源，但同时最多只能有32路输
 		UndtStackSpace	SPACE	0x100 * 4 		;用户（系统）模式堆栈空间
 		UsrStackSpace
 		END 
+
+RTC
+refer to http://hi.baidu.com/ch314156/item/9500a7a907aa9538030a4d14
+
+2.14.3 PWM
+----
+PWM - Pulse Width Modulation 脉冲宽度调制
+概念，参考 http://www.baike.com/wiki/脉宽调制  
+通过高分辨率计数器的使用，方波的占空比被调制用来对一个具体模拟信号的电平进行编码。PWM信号仍然是数字的，因为在给定的任何时刻，满幅值的直流供电要么完全有(ON)，要么完全无(OFF)。电压或电流源是以一种通(ON)或断(OFF)的重复脉冲序列被加到模拟负载上去的。通的时候即是直流供电被加到负载上的时候，断的时候即是供电被断开的时候。只要带宽足够，任何模拟值都可以使用PWM进行编码。
+
+我的理解：如果是采用模拟信号，横轴为时间，纵轴为模拟信号量值，则变化是一个曲线，假设量值为1，则信号是一个从-1到1之间的变化量。不考虑方向（正负），则信号量变化是一个[0,1]之间的值  
+采用PWM，就是利用占空比的值来等价这个[0,1]之间的值。  
+而占空比可以用数字信号来模拟得到，接通（t）和周期T之间的比值t/T,参考http://baike.baidu.com/view/201672.htm
+
+mini2440的PWM实验，参考 http://hi.baidu.com/qq453158783/item/82f9a39e7e8f05d71f42710f
+
+[PWM死区(Dead Zone)的作用和意义](http://blog.sina.com.cn/s/blog_944790400101f8ej.html)  
+[让mini2440从GPB1输出PWM](http://blog.csdn.net/thinking811/article/details/7072081)
+[基于ARM的有制动不可逆PWM驱动电路的分析与设计](http://wenku.baidu.com/view/ea3c0bd176eeaeaad1f330c6.html)
+
+三极管的相关概念：  
+NPN:![NPN](./NPN.png) 
+
+PNP:![PNP](./PNP.png)
+
+具有电流放大作用,两个PN结把整块半导体分成三部分，中间部分是基区（Base），两侧部分是发射区（Emitter）和集电区（Collector），排列方式有PNP和NPN两种。  
+NPN和PNP主要就是电流方向和电压正负不同，说得“专业”一点，就是“极性”问题。
+
+- NPN 是用 B→E 的电流（IB）控制 C→E 的电流（IC），E极电位最低，且正常放大时通常C极电位最高，即 VC > VB > VE  
+- PNP 是用 E→B 的电流（IB）控制 E→C 的电流（IC），E极电位最高，且正常放大时通常C极电位最低，即 VC < VB < VE
+
+
+如今流行的电路图画法，"阳上阴下”，也就是“正电源在上负电源在下”。那NPN电路中，E 最终都是接到地板（直接或间接），C 最终都是接到天花板（直接或间接）。PNP电路则相反，C 最终都是接到地板（直接或间接），E 最终都是接到天花板（直接或间接）。这也是为了满足上面的VC 和 VE的关系。一般的电路中，有了NPN的，你就可以按“上下对称交换”的方法得到 PNP 的版本。
+参考[NPN与PNP三极管的区别 ](http://blog.163.com/wangdan_198509/blog/static/1307653132009101595755342/)
+
+
+[PNP三极管驱动蜂鸣器原理](http://zhidao.baidu.com/question/1765647181148785260.html) NPN三极管驱动的原理应该是类似的。  
+[三极管驱动蜂鸣器问题！](http://zhidao.baidu.com/question/295325258.html?qbl=relate_question_0)  
+另外为何要配置极性反转，参考[蜂鸣器](http://www.baike.com/wiki/%E8%9C%82%E9%B8%A3%E5%99%A8&prd=so_1_doc)中“蜂鸣器 - 电路原理图”部分有关“I/O 口定时翻转电平驱动蜂鸣器方式”的描述。
+
+
+
+
+
+
+
+
+
