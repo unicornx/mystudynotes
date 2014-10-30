@@ -1,3 +1,5 @@
+[关于ARM的几个基本概念浅析](http://blog.csdn.net/nuecai/article/details/8039642)
+
 ARM处理器架构  
 ----
 有一本很好的讲arm架构的书：《ARM System Developer's Guide》  
@@ -74,16 +76,7 @@ ADS1.2的OPTION中的IMAGE ENTRY POINT是就是程序运行的时候，应该执
 参考资料：  
 [AXD 调试经验，使用及问题](http://blog.csdn.net/lq_automatic/article/details/7019021)  
 [AXD 调试汇总（整理来源于网页）](http://blog.chinaunix.net/uid-26947004-id-3310216.html)  
-[基于mini2440的H-JTAG烧写程序的方法](http://wenku.baidu.com/view/c1fc762cb4daa58da0114ae7.html)  
 [ARM编程进阶之三 —— 裸机硬件的控制方法与例程](http://scyangzhu.wordpress.com/2010/03/02/arm%E7%BC%96%E7%A8%8B%E8%BF%9B%E9%98%B6%E4%B9%8B%E4%B8%89-%E2%80%94%E2%80%94-%E8%A3%B8%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E6%8E%A7%E5%88%B6%E6%96%B9%E6%B3%95%E4%B8%8E%E4%BE%8B%E7%A8%8B/)  
-
-
-
-
-Bootloader
-----
-[ARM的位置无关程序设计在Bootloader中的应用](http://www.mcuol.com/tech/107/26052.htm)  
-
 
 ARM & C
 ----
@@ -96,18 +89,6 @@ ARM & C
 [使用ARM标准C库进行嵌入式应用程序开发](http://wenku.baidu.com/view/bb96fdc4aa00b52acfc7ca58.html)  
 [最简单的C程序(STM32版的helloworld)](http://wiki.csie.ncku.edu.tw/embedded/Lab19/stm32-prog.pdf)  
 [ARM嵌入式软件编程经验谈](http://www.embedu.org/Column/Column02.htm)  
-
-
-S3C2440  
-----
-
-S3C2440释疑[http://blog.163.com/dingmz_frcmyblog/blog/static/2173040232013111425920546/]  
-提了几个不错的问题，但回答不是很对。可以用来搜集为常用问题对待  
-
-
-s3c2440系统时钟  
-http://blog.csdn.net/dreamcatcher100/article/details/9374559  
-我们用最清晰的线路来绘制一下时钟的产生过程：外部时钟源→通过寄存器MPLLCON得到FCLK→再通过寄存器CLKDIVN得到HCLK和PCLK。这个配置过程在启动文件中就已完成。
 
 
 杂  

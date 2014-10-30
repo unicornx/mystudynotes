@@ -1,6 +1,8 @@
 使用HJTAG对mini2440的nandflash进行烧写和擦除
 ----
-参考 [H-Jtag V1.0 烧写Nand Flash](http://blog.csdn.net/dearwind153/article/details/7184224)
+参考  
+[H-Jtag V1.0 烧写Nand Flash](http://blog.csdn.net/dearwind153/article/details/7184224)
+[基于mini2440的H-JTAG烧写程序的方法](http://wenku.baidu.com/view/c1fc762cb4daa58da0114ae7.html)  
 
 （1）选择NOR方式启动，打开H-JTAG连接上ARM920T
 ![](./1.PNG)
