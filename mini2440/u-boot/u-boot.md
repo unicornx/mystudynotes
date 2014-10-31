@@ -12,7 +12,15 @@ step3：v 下载uboot.bin
 
 
 
+uboot代码走读(v2009.11)：  
+[cpu/arm920t/start.S](./start.S)
 
+
+
+
+
+_undefined_instruction:	.word undefined_instruction
+这句话的意思是在_undefined_instruction标号处定一个32bit的word，值为undefined_instruction，undefined_instruction在后面的标号处定义 
 
 
 
