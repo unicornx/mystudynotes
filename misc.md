@@ -12,4 +12,11 @@ else
 
 参考：http://www.cnblogs.com/youxin/archive/2012/07/03/2575504.html
 
+
+AT&T汇编语法
+
+http://blog.csdn.net/jnu_simba/article/details/11747901
+为何用.S而不是.s
+
+
 	
