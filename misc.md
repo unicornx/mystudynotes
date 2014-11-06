@@ -19,4 +19,8 @@ http://blog.csdn.net/jnu_simba/article/details/11747901
 为何用.S而不是.s
 
 
+http://www.csdn.net/article/2013-05-02/2815109-ArduinoUno-vs-BeagleBone-vs-RaspberryPi/1
+
+http://dfrobot.taobao.com/
+
 	

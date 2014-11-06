@@ -35,7 +35,10 @@
  *************************************************************************
  */
 
-
+/*
+ * $$$UX
+ * 异常向量表
+ */
 .globl _start
 _start:	b	start_code
 	ldr	pc, _undefined_instruction
@@ -47,7 +50,8 @@ _start:	b	start_code
 	ldr	pc, _fiq
 
 /*
- * $$$UX .word is to define a 32-bits data area to store the 
+ * $$$UX 
+ * .word is to define a 32-bits data area to store the 
  * value of undefined_instruction, which is a address flag
  * defined in this file
  */
@@ -117,6 +121,10 @@ FIQ_STACK_START:
 
 start_code:
 	/*
+	 * $$$UX
+	 * ARM CPU的程序状态寄存器
+	 */
+	/*
 	 * set the cpu to SVC32 mode
 	 */
 	mrs	r0, cpsr
@@ -141,6 +149,10 @@ copyex:
 	bne	copyex
 #endif
 
+/*
+ * $$$UX
+ * 看门狗
+ */
 #if defined(CONFIG_S3C2400) || defined(CONFIG_S3C2410)
 	/* turn off the watchdog */
 

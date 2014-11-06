@@ -1,3 +1,8 @@
+bootloader的描述，和PC启动的对比，参考“嵌入式系统原理与应用“Page64
+
+
+
+
 [U-boot官网](http://www.denx.de/en/News/WebHome)
 
 [U-Boot源代码下载地址](ftp://ftp.denx.de/pub/u-boot/)
@@ -15,6 +20,8 @@ step3：v 下载uboot.bin
 uboot代码走读(v2009.11)：  
 [cpu/arm920t/start.S](./start.S)
 
+#include <common.h> //whereis?
+#include <config.h> //whereis?
 
 
 
