@@ -35,9 +35,7 @@ There are sevearal reasons may cause this:
 It's due to we clone the repo from UNIX and defaultly admin will set the filemode to true for evey repo 
 After we copy them from unix machine to Windows machine, due to "old mode 100755 new mode 100644" problem, Git on Windows will report this change though we didn't change anything. 
 To avoid this, "git config --add core.filemode false" 
-2)  
- 
- 
+2)
  
  
 git-add 

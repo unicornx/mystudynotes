@@ -65,3 +65,11 @@ sudo apt-get install retext
 13) Install IDLE for Python  
 sudo apt-get install idle  
 
+14) share desktop with VNC
+http://wiki.ubuntu.com.cn/UbuntuHelp:VNC/Servers
+some tips about VNC
+http://www.cnblogs.com/leaven/archive/2012/03/31/2427240.html
+http://help.aliyun.com/view/11108189_13435406.html
+http://www.2cto.com/os/201411/348370.html
+http://nuclear-imaging.info/site_content/2010/04/19/vnc-server-setup-for-ubuntu-10-04-lucid-lynx/
+http://askubuntu.com/questions/57502/how-to-set-up-vnc-server

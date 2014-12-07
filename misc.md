@@ -23,4 +23,21 @@ http://www.csdn.net/article/2013-05-02/2815109-ArduinoUno-vs-BeagleBone-vs-Raspb
 
 http://dfrobot.taobao.com/
 
-	
+
+
+[个人总结:嵌入式编程应该注意的问题](http://bbs.ednchina.com/BLOG_ARTICLE_3022075.HTM?click_from=8800024661%2c4950350570%2c2014-11-24%2cEDNCOL%2cNEWSLETTER)
+
+[学习单片机的八大步骤](http://www.ednchina.com/ART_8800519135_29_35572_TA_6d26af49.HTM?rel=article_relateArticle)
+
+[一起学mini2440裸机开发(三)--S3C2440时钟学习](http://blog.csdn.net/mybelief321/article/details/8914299)
+
+
+[未来制造业的四大趋势，中国该如何跟进？](http://www.robotics-cn.com/BLOG_ARTICLE_211.HTM?click_from=8800112501%2c4950350570%2c2014-11-24%2cRTCOL%2cNEWSLETTER)
+
+[这九大技术将在2015年或未来大行其道](http://www.csdn.net/article/2014-12-02/2822902)
+
+[深入解析Docker背后的namespace技术](http://www.csdn.net/article/2014-11-27/2822831-creating-containers-part-1)
+
+[计算机二级考试C语言基础知识测试](http://student.csdn.net/mcs/self_testing)
+
+[最新版本蓝牙增添可衍生大量潜在应用的功能](http://www.ednchina.com/ART_8800520055_27_35481_TA_67f3a8c5.HTM)

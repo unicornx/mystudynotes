@@ -2,6 +2,3 @@
 [tmd123](http://ec2-54-64-24-234.ap-northeast-1.compute.amazonaws.com/)  
 [lk](http://lxr.free-electrons.com/)  
 
-[eee](http://blog.csdn.net/mybelief321/article/details/8914299)  
-
-
