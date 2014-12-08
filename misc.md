@@ -41,3 +41,13 @@ http://dfrobot.taobao.com/
 [计算机二级考试C语言基础知识测试](http://student.csdn.net/mcs/self_testing)
 
 [最新版本蓝牙增添可衍生大量潜在应用的功能](http://www.ednchina.com/ART_8800520055_27_35481_TA_67f3a8c5.HTM)
+
+[环信刘俊彦：微信之外还有一个庞大的生态圈](http://www.csdn.net/article/2014-12-04/2822947)
+
+[Docker系列文章翻译启动 招募译者及审校](http://code.csdn.net/news/2822928)
+
+[2014 Linux Journal年度评选结果出炉](http://code.csdn.net/news/2823005)
+
+[想玩开源又不想写代码的八种做法](http://code.csdn.net/news/2823008)
+
+
